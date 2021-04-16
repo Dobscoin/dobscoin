@@ -5,6 +5,8 @@ export default function Home() {
     const [logoColor, setLogoColor] = useState("white");
     const [btnColor, setBtnColor] = useState("black");
     const [btnBg, setBtBg] = useState("white");
+    const [volume, setVolume] = useState(35)
+    let counter = 35;
 
     const style = {
         headerLogo: {
@@ -18,7 +20,16 @@ export default function Home() {
 
     useEffect(() => {
         document.addEventListener("scroll", () => scroll());
+        window.setInterval(count, 100);
+        // const timer = setTimeout(() => {
+        //     count();
+        //   }, 100);
     }, []);
+
+    function count() {
+        counter++;
+        setVolume(counter);
+    }
 
     function scroll() {
         let top = document.getElementById("infoSection").getBoundingClientRect().top
@@ -43,7 +54,7 @@ export default function Home() {
             <div id="homePage">
                 <div id="header">
                     <div id="headerLogo" className="hoverable" onClick={() => window.location.href = "/"}>
-                        D
+                        <img id="dobsFaceHeader" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7188.png?alt=media&token=1f1ced11-33b6-4a75-bdb9-2f1d0a93e71e"></img>
                     </div>
                     <div id="headerTitle" className="hoverable" onClick={() => window.location.href = "/"} style={style.headerLogo}>
                         Dobscoin
@@ -73,19 +84,17 @@ export default function Home() {
                             About Dobs
                         </div>
                         <div id="infoParagraph">
-                            Meet Colt. He's the cute guy in the picture. He's also the mascot for a next generation meme coin. Colt was found abandoned at an empty building and we saved him. We thought he looked a bit like Dolby from Harry Potter so we call him Dobs for short.
+                            Meet Colt. He's the cute guy in the picture. He's also the mascot for a next generation meme coin. Colt was found abandoned at an empty building and we saved him. We thought he looked a bit like Dobby from Harry Potter so we call him Dobs for short.
                         </div>
                     </div>
                 </div>
-                <div id="howItWorks">
-                    <div id="totalArea">
-                        <div id="totalTitle">
-                            Total DOBS in existence
-                        </div>
-                        <div id="totalSupply">
-                            10,000 DOBS
-                        </div>
+                <div id="team">
+                    <div>
+                        Meet the team
                     </div>
+                    {/* <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7127.jpg?alt=media&token=f45ca466-1de7-4500-a504-8b868e862d0b" alt="member portrait"></img>
+                    <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7139.jpg?alt=media&token=8cbb8fc1-0909-4312-9640-97495a1ccfbe" alt="member portrait"></img>
+                    <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7125.jpg?alt=media&token=6878aac9-1462-427b-a7f6-5661dabeb84b" alt="member portrait"></img> */}
                     {/* <div id="contract">
                         Contract Address: 0x37ecD561fd5e871f68603554EdF04E53ba913936
                     </div> */}
@@ -107,13 +116,13 @@ export default function Home() {
                             24hr Volume
                         </div>
                         <div className="sub">
-                            $402,490
+                            ${volume}
                         </div>
                         <div className="title" id="marketCap">
                             Market Capitalization
                         </div>
                         <div className="sub">
-                            $89,490,911
+                            $500
                         </div>
                         <div className="title" id="marketCap">
                             Total DOBS
@@ -125,7 +134,7 @@ export default function Home() {
                             Price per DOBS
                         </div>
                         <div className="sub">
-                            $0.27
+                            $0.25
                         </div>
                     </div>
                        <div id="footer">
