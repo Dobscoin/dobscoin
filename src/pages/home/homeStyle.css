@@ -103,7 +103,7 @@
 #heroSlogan {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 40px;
     margin-top: 20px;
     margin-left: 15px;
@@ -192,18 +192,52 @@
     bottom: 0;
     width: 100vw;
     height: 60px;
-    background-color: black;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: white;
+    color: black;
     font-size: 15px;
 }
 
 .footerEl:hover {
     cursor: pointer;
+}
+
+/* stats --------------------------------------------------------------------------------------------- */
+#stats {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#statsArea {
+    margin-top: -60px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 35px;
+}
+
+.sub {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 60px;
+}
+
+#marketCap {
+    margin-top: 40px;
 }
 
 @media only screen and (max-width: 1000px) {

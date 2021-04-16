@@ -67,7 +67,7 @@ export default function Home() {
                     <img onClick={() => scrollCue()} id="scrollCue" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/arrow-down-sign-to-navigate%20(1).png?alt=media&token=fe6a8bc2-5a73-46d4-94c4-0c599ae56e8a" alt="scroll arrow cue"></img>
                 </div>
                 <div id="infoSection">
-                    <img id="dolbyPic" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_6861.JPG?alt=media&token=e984ff90-f60d-4106-9b81-8cdc510a7353" alt="dolby"></img>
+                    <img id="dolbyPic" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7049.JPG?alt=media&token=8fcf029b-010d-4dcc-b47c-452aa3568aa7" alt="dolby"></img>
                     <div id="infoText">
                         <div id="infoTitle">
                             About Dobs
@@ -89,7 +89,46 @@ export default function Home() {
                     {/* <div id="contract">
                         Contract Address: 0x37ecD561fd5e871f68603554EdF04E53ba913936
                     </div> */}
-                    <div id="footer">
+                    {/* <div id="footer">
+                        <div className="footerEl" onClick={() => window.location = "https://www.reddit.com/r/Dobscoin/"}>
+                            reddit
+                        </div>
+                        <div className="footerEl" onClick={() => window.location = "https://github.com/jawm17/dobscoin"}>
+                            github
+                        </div>
+                        <div>
+                            copyright 2021
+                        </div>
+                    </div> */}
+                </div>
+                <div id="stats">
+                    <div id="statsArea">
+                        <div className="title">
+                            24hr Volume
+                        </div>
+                        <div className="sub">
+                            $402,490
+                        </div>
+                        <div className="title" id="marketCap">
+                            Market Capitalization
+                        </div>
+                        <div className="sub">
+                            $89,490,911
+                        </div>
+                        <div className="title" id="marketCap">
+                            Total DOBS
+                        </div>
+                        <div className="sub">
+                            10,000
+                        </div>
+                        <div className="title" id="marketCap">
+                            Price per DOBS
+                        </div>
+                        <div className="sub">
+                            $0.27
+                        </div>
+                    </div>
+                       <div id="footer">
                         <div className="footerEl" onClick={() => window.location = "https://www.reddit.com/r/Dobscoin/"}>
                             reddit
                         </div>
