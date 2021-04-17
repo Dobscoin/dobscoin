@@ -97,24 +97,42 @@ export default function Home() {
                 </div>
                 <div id="team">
                     <div>
-                        Meet the team
+                        <div id="teamTitle">
+                            Meet the team
+                        </div>
+                        <div id="membersOnly">
+                            <div className="memberDiv">
+                                <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7127.jpg?alt=media&token=f45ca466-1de7-4500-a504-8b868e862d0b" alt="member portrait"></img>
+                                <div className="memberName">
+                                    Crazy Mac
+                                </div>
+                                <div className="memberTitle">
+                                    Lead strategist
+                                </div>
+                            </div>
+                            <div className="memberDiv">
+                                <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7139.jpg?alt=media&token=8cbb8fc1-0909-4312-9640-97495a1ccfbe" alt="member portrait"></img>
+                                <div className="memberName">
+                                    Crusty Crab Cox
+                                </div>
+                                <div className="memberTitle">
+                                    Marketing
+                                </div>
+                            </div>
+                            <div className="memberDiv">
+                                <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7125.jpg?alt=media&token=6878aac9-1462-427b-a7f6-5661dabeb84b" alt="member portrait"></img>
+                                <div className="memberName">
+                                    White Man
+                                </div>
+                                <div className="memberTitle">
+                                    Engineer
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    {/* <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7127.jpg?alt=media&token=f45ca466-1de7-4500-a504-8b868e862d0b" alt="member portrait"></img>
-                    <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7139.jpg?alt=media&token=8cbb8fc1-0909-4312-9640-97495a1ccfbe" alt="member portrait"></img>
-                    <img className="member" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7125.jpg?alt=media&token=6878aac9-1462-427b-a7f6-5661dabeb84b" alt="member portrait"></img> */}
+
                     {/* <div id="contract">
                         Contract Address: 0x37ecD561fd5e871f68603554EdF04E53ba913936
-                    </div> */}
-                    {/* <div id="footer">
-                        <div className="footerEl" onClick={() => window.location = "https://www.reddit.com/r/Dobscoin/"}>
-                            reddit
-                        </div>
-                        <div className="footerEl" onClick={() => window.location = "https://github.com/jawm17/dobscoin"}>
-                            github
-                        </div>
-                        <div>
-                            copyright 2021
-                        </div>
                     </div> */}
                 </div>
                 <div id="stats">
