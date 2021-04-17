@@ -328,3 +328,13 @@
         margin-top: 0px;
     }
 }
+
+@media only screen and (max-height: 660px) {
+    #teamTitle {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    .member {
+        margin-top: 15px;
+    }
+}
