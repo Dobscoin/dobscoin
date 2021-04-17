@@ -242,31 +242,41 @@
         display: initial;
         margin-left: 10vw;
     }
-
     #dolbyPic {
         margin-top: 80px;
     }
-
     #infoText {
         margin-left: 0px;
         margin-left: 10vw;
         width: 80vw;
     }
-    
     #infoTitle {
         padding-top: 40px;
         font-size: 25px;
     }
-    
     #infoParagraph {
         margin-top: 10px;
         font-size: 20px;
     }
-    
 }
 
-@media only screen and (max-width: 510px) {
-    #totalSupply {
-      font-size: 40px;
+@media only screen and (max-width: 550px) {
+    #headerLogo {
+        margin-left: 20px;
+    }
+    #headerbtn {
+        right: 20px;  
+    }
+    .title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 25px;
+    }
+    .sub {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 45px;
     }
 }

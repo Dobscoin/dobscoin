@@ -32,11 +32,18 @@ export default function Home() {
     }
 
     function scroll() {
-        let top = document.getElementById("infoSection").getBoundingClientRect().top
-        if (top <= 10) {
-            setLogoColor("black");
-            setBtnColor("white");
-            setBtBg("black");
+        let whiteTop = document.getElementById("infoSection").getBoundingClientRect().top
+        let blackTop = document.getElementById("stats").getBoundingClientRect().top
+        if (whiteTop <= 10) {
+            if (blackTop <= 10) {
+                setLogoColor("white");
+                setBtnColor("black");
+                setBtBg("white");
+            } else {
+                setLogoColor("black");
+                setBtnColor("white");
+                setBtBg("black");
+            }
         } else {
             setLogoColor("white");
             setBtnColor("black");
@@ -137,7 +144,7 @@ export default function Home() {
                             $0.25
                         </div>
                     </div>
-                       <div id="footer">
+                    <div id="footer">
                         <div className="footerEl" onClick={() => window.location = "https://www.reddit.com/r/Dobscoin/"}>
                             reddit
                         </div>
