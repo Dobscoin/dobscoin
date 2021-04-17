@@ -32,9 +32,9 @@ export default function Home() {
     }
 
     function scroll() {
-        let whiteTop = document.getElementById("infoSection").getBoundingClientRect().top
+        let heroBottom = document.getElementById("heroAnimation").getBoundingClientRect().bottom
         let blackTop = document.getElementById("stats").getBoundingClientRect().top
-        if (whiteTop <= 10) {
+        if (heroBottom <= 10) {
             if (blackTop <= 10) {
                 setLogoColor("white");
                 setBtnColor("black");
@@ -61,7 +61,7 @@ export default function Home() {
             <div id="homePage">
                 <div id="header">
                     <div id="headerLogo" className="hoverable" onClick={() => window.location.href = "/"}>
-                        <img id="dobsFaceHeader" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7188.png?alt=media&token=1f1ced11-33b6-4a75-bdb9-2f1d0a93e71e"></img>
+                        <img id="dobsFaceHeader" alt="dobs face" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7188.png?alt=media&token=1f1ced11-33b6-4a75-bdb9-2f1d0a93e71e"></img>
                     </div>
                     <div id="headerTitle" className="hoverable" onClick={() => window.location.href = "/"} style={style.headerLogo}>
                         Dobscoin
@@ -73,7 +73,7 @@ export default function Home() {
                 <div id="heroAnimation">
                     <div id="heroInfo">
                         <div id="heroLogo">
-                            <img id="dobsFace" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7188.png?alt=media&token=1f1ced11-33b6-4a75-bdb9-2f1d0a93e71e"></img>
+                            <img id="dobsFace" alt="dobs face" src="https://firebasestorage.googleapis.com/v0/b/ethresources-1ed10.appspot.com/o/IMG_7188.png?alt=media&token=1f1ced11-33b6-4a75-bdb9-2f1d0a93e71e"></img>
                         </div>
                         <div id="heroTitle">
                             Dobscoin
@@ -148,11 +148,11 @@ export default function Home() {
                         <div className="footerEl" onClick={() => window.location = "https://www.reddit.com/r/Dobscoin/"}>
                             reddit
                         </div>
-                        <div className="footerEl" onClick={() => window.location = "https://github.com/jawm17/dobscoin"}>
-                            github
-                        </div>
                         <div>
-                            copyright 2021
+                            © 2021
+                        </div>
+                        <div className="footerEl" onClick={() => window.location = "https://etherscan.io/address/0x84d4c9f3f7984b886615706db6beb195d8c98d7e"}>
+                            contract
                         </div>
                     </div>
                 </div>

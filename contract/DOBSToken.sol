@@ -116,7 +116,7 @@ contract Dobscoin is ERC20Interface, Owned, SafeMath {
         symbol = "DOBS";
         name = "Dobscoin";
         decimals = 18;
-        _totalSupply = 100000000000000000000;
+        _totalSupply = 10000000000000000000000;
         balances[0x533d5e63226Aab49C7BA3c3387ffA09e0bAf2F10] = _totalSupply;
         emit Transfer(address(0), 0x533d5e63226Aab49C7BA3c3387ffA09e0bAf2F10, _totalSupply);
     }
