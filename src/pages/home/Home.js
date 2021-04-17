@@ -5,8 +5,8 @@ export default function Home() {
     const [logoColor, setLogoColor] = useState("white");
     const [btnColor, setBtnColor] = useState("black");
     const [btnBg, setBtBg] = useState("white");
-    const [volume, setVolume] = useState(35)
-    let counter = 35;
+    const [volume, setVolume] = useState(357890)
+    let counter = 357890;
 
     const style = {
         headerLogo: {
@@ -147,7 +147,7 @@ export default function Home() {
                             Market Capitalization
                         </div>
                         <div className="sub">
-                            $500
+                            $543,938,293
                         </div>
                         <div className="title" id="marketCap">
                             Total DOBS
@@ -159,7 +159,7 @@ export default function Home() {
                             Price per DOBS
                         </div>
                         <div className="sub">
-                            $0.25
+                            $54,393
                         </div>
                     </div>
                     <div id="footer">
