@@ -66,7 +66,7 @@ export default function Home() {
                     <div id="headerTitle" className="hoverable" onClick={() => window.location.href = "/"} style={style.headerLogo}>
                         Dobscoin
                     </div>
-                    <div id="headerbtn" className="hoverable" style={style.headerBtn} onClick={() => window.location = "https://app.uniswap.org/#/swap"}>
+                    <div id="headerbtn" className="hoverable" style={style.headerBtn} onClick={() => window.location = "https://app.uniswap.org/#/swap?outputCurrency=0x84D4c9F3F7984B886615706DB6Beb195d8C98D7e"}>
                         Buy DOBS
                     </div>
                 </div>
